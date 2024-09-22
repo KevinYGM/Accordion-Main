@@ -1,7 +1,19 @@
 import './App.css';
-import star from './assets/icon-star.svg'
+import star from './assets/icon-star.svg';
+import buttonPlus from './assets/icon-plus.svg';
+import buttonMinus from './assets/icon-minus.svg';
+import { useState } from 'react';
 
 function App() {
+
+  const [stateButton, setStateButton] = useState(false);
+  const [openInfo, setOpenInfo] = useState(false);
+
+  const openClosed = () => {
+    setStateButton(prevState => !prevState);
+    setOpenInfo(prevState => !prevState);
+  }
+
   return (
     <>
       <div className="background-up"></div>
@@ -9,22 +21,34 @@ function App() {
       <div className="window-float">
 
         {/* Title */}
-        <h1>
+        <div className='title'>
           <img src={star} alt='Star'/>
-          FAQs
-        </h1>
+          <h1>FAQs</h1>
+        </div>
 
 
         {/* First Question */}
-        <h2>
-          What is Frontend Mentor, and how will it help me?
-        </h2>
+        <div className="question">
+          <h2>
+            What is Frontend Mentor, and how will it help me?
+          </h2>
 
-        <p>
-          Frontend Mentor offers realistic coding challenges to help developers improve their 
-          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-          all levels and ideal for portfolio building.
-        </p>
+          <img  src={stateButton ? buttonMinus : buttonPlus} 
+                alt="Button for open or Closed" 
+                onClick={ openClosed }/>
+          
+          {openInfo && (
+              <p>
+                Frontend Mentor offers realistic coding challenges to help developers improve their 
+                frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                all levels and ideal for portfolio building.
+              </p>
+            )
+          }
+        </div>
+        
+
+        
 
 
         {/* Second Question */}

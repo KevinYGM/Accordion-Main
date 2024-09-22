@@ -25,6 +25,31 @@ body{
   --White: hsl(0, 0%, 100%);
   --LightPink: hsl(275, 100%, 97%);
   --GrayishPurple: hsl(293, 48%, 82%);
+  --DarkMediumPurple: hsla(293, 15%, 21%, 0.76);
   --DarkPurple: hsl(292, 42%, 14%);
+}
+
+h1{
+  margin-left: 20px;
+}
+
+h2{
+  margin: 15px 0;
+  color: var(--DarkPurple);
+  font-size: 110%;
+}
+
+p{
+  margin: 20px 0;
+  color: var(--DarkMediumPurple);
+  font-size: 80%;
+  line-height: 18px;
+  transition: all 4s ease-in-out;
+}
+
+img{
+  width: 25px;
+  cursor: pointer;
+  transition: all 4s ease-in-out;
 }
 

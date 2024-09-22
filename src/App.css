@@ -16,12 +16,44 @@
 
 .window-float{
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   width: 90%;
+
+  padding: 25px;
   background-color: var(--White);
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+
+  .title{
+    display: flex;
+  }
+
+  .question{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas:    "question button"
+                            "answer answer";
+
+    h2{
+      grid-area: question;
+
+    }
+
+    img{
+      grid-area: button;
+      align-self: center;
+      justify-self: center;
+      width: 30px;
+    }
+
+
+    p{
+      grid-area: answer;
+    }
+
+  }
   
 }
