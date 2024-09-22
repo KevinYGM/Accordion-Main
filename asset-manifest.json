@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Accordion-Main/static/css/main.ce2555d8.css",
+    "main.js": "/Accordion-Main/static/js/main.1c470e48.js",
+    "static/media/background-pattern-mobile.svg": "/Accordion-Main/static/media/background-pattern-mobile.bbadbddabee663bba888.svg",
+    "static/media/background-pattern-desktop.svg": "/Accordion-Main/static/media/background-pattern-desktop.621478cf83f8150af604.svg",
+    "index.html": "/Accordion-Main/index.html",
+    "static/media/icon-star.svg": "/Accordion-Main/static/media/icon-star.189fd38b8aefdc8fbe0d4008b1ff497e.svg",
+    "static/media/icon-plus.svg": "/Accordion-Main/static/media/icon-plus.6c5381bcc9a768ea5c3683e11c6bfd6c.svg",
+    "static/media/icon-minus.svg": "/Accordion-Main/static/media/icon-minus.5575b6de09a1e0deab1dd585ada35f31.svg",
+    "main.ce2555d8.css.map": "/Accordion-Main/static/css/main.ce2555d8.css.map",
+    "main.1c470e48.js.map": "/Accordion-Main/static/js/main.1c470e48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce2555d8.css",
+    "static/js/main.1c470e48.js"
+  ]
+}
