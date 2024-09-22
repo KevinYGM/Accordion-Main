@@ -50,10 +50,15 @@
     }
 
 
-    p{
+    .accordion{
       grid-area: answer;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      max-height: 0;
     }
 
+    .accordion.open {
+      max-height: 200px;
+    }
   }
-  
 }
