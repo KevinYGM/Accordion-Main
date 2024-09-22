@@ -31,7 +31,7 @@ function App() {
         {/* Questions */}
         {faqData.map((data, index) => (
           <div key={index} className="question">
-            <h2>{data.question}</h2>
+            <h2 onClick={() => toggleInfo(index)} >{data.question}</h2>
 
             <img 
               src={openInfo[index] ? buttonMinus : buttonPlus} 

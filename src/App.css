@@ -20,6 +20,7 @@
   left: 50%;
   transform: translate(-50%, 0%);
   width: 90%;
+  max-width: 625px;
 
   padding: 25px;
   background-color: var(--White);
@@ -39,7 +40,12 @@
 
     h2{
       grid-area: question;
+      cursor: pointer;
 
+    }
+
+    h2:hover {
+      color: rgb(172, 20, 172);
     }
 
     img{
@@ -60,5 +66,11 @@
     .accordion.open {
       max-height: 200px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .background-up{
+    background-image: url('./assets/background-pattern-desktop.svg');
   }
 }
